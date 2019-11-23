@@ -1,39 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="card text-white bg-primary " lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bitcoin-Ticker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/materia/bootstrap.min.css" rel="stylesheet" integrity="sha384-SYbiks6VdZNAKT8DNoXQZwXAiuUo5/quw6nMKtFlGO/4WwxW86BSTMtgdzzB9JJl" crossorigin="anonymous">    <title>Bitcoin-Ticker</title>
 </head>
-<body>
+<body >
     
 
-    <h1>Bitcoin Ticker</h1>
-    <form class="S" action="/" method="POST">
-        <select  class="S" name="crypto" id="">
-            <option   class="S" value="BTC">BitCoin</option>
-            <option  class="S" value="ETH">Ethereum</option>
-            <option  class="S" value="LTC">Litecoins</option>
-        </select>
-        <select  class="S" name="Fiat" id="">
-                <option   class="S" value="USD">US dollars</option>
-                <option  class="S" value="GBP">GB Pounds</option>
-                <option  class="S" value="EUR">EU Euros</option>
-            </select>
+    <h1 id ="test">Bitcoin Ticker</h1>
+    <div class="card bg-light mb-3"  >
+        <form class="S" action="/" method="POST">
+            <input class="form-control-plaintext" class ="S"type="text" name="amount" placeholder="quantity">
+            <div >
+    
+                <select  class="form-control" class ="S" name="crypto" id="S">
+                    <option   class="text-muted" value="BTC">BitCoin</option>
+                    <option  class="text-muted" value="ETH">Ethereum</option>
+                    <option  class="text-muted" value="LTC">Litecoins</option>
+                </select>
+            </div>
+            <select  class="form-control" class ="S"  name="Fiat" id="S">
+                    <option   class="text-muted" value="USD">US dollars</option>
+                    <option  class="text-muted" value="GBP">GB Pounds</option>
+                    <option  class="text-muted" value="EUR">EU Euros</option>
+                </select>
+                
+    
+                <button class="btn btn-primary btn-lg btn-block" type="submit" name="check">Submit</button>
+            
+            
+        
+        
+        </form>
+       
 
-            <button class="S" type="submit" name="check">Submit</button>
-        
-        
+    </div>
     
-    
-    </form>
-    <style>
-        .S{
-            font-size: 1.3em;
-            size: 1.4em;
-            margin: 10px;
-        }
-    </style>
 </body>
-</html>
+</html >
+
+<style>html{
+    font-size: 1.8em;
+    size: 1.5em;
+    margin: 5px;
+    padding:55px
+    
+}
+body {
+    padding: 150px;
+    padding-top: 50px;    
+    padding-bottom: 150px;
+    margin:50px;
+    border: 1px;
+    border-radius: 37px;
+}
+
+</style>
